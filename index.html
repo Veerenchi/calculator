@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Only Calculator UI</title>
+  <style>
+    body {
+      background-color: #f3f3f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      width: 300px;
+    }
+
+    .display {
+      background-color: #000;
+      color: #0f0;
+      font-size: 2em;
+      text-align: right;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      height: 50px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .button {
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      font-size: 1.2em;
+      text-align: center;
+      border-radius: 8px;
+      user-select: none;
+    }
+
+    .button.operator {
+      background-color: #ff9500;
+    }
+
+    .button.equal {
+      background-color: #34c759;
+      grid-column: span 2;
+    }
+
+    .button.clear {
+      background-color: #ff3b30;
+    }
+
+    .button:active {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display">0</div>
+    <div class="buttons">
+      <div class="button clear">C</div>
+      <div class="button operator">÷</div>
+      <div class="button operator">×</div>
+      <div class="button operator">−</div>
+
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button operator">+</div>
+
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button equal">=</div>
+
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+
+      <div class="button" style="grid-column: span 2;">0</div>
+      <div class="button">.</div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+    .
